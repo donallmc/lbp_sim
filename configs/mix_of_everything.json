@@ -1,0 +1,20 @@
+[
+
+      {"count":100, "type":"AllInAtStart","budget":1000, "ceiling": 4},
+      {"count":2, "type":"AllInAtStart","budget":500000, "ceiling": 2},
+      {"count":10, "type":"AllInAtStart","budget":100000, "ceiling": 2},
+
+      {"count":10, "type":"DollarCostAverage","budget_per_buy":1000,"frequency":1,  "ceiling": 3},
+      {"count":10, "type":"DollarCostAverage","budget_per_buy":10000,"frequency":4,  "ceiling": 3},
+      {"count":300, "type":"DollarCostAverage","budget_per_buy":500,"frequency":2,  "ceiling": 3},
+      {"count":10, "type":"DollarCostAverage","budget_per_buy":10000,"frequency":12,  "ceiling": 3},
+
+      {"count":10, "type":"TargetBuyer","target":0.5,"budget":100000},
+      {"count":1000, "type":"TargetBuyer","target":0.5,"budget":1000},
+      {"count":5000, "type":"TargetBuyer","target":1,"budget":1000},
+      {"count":1000, "type":"TargetBuyer","target":0.2,"budget":100000},
+
+
+      {"count":2000, "type":"FOMOBuyer","target_high":3,"target_low":1,"budget":3000,  "ceiling": 3},
+      {"count":1000, "type":"FOMOBuyer","target_high":2,"target_low":0.6,"budget":10000,  "ceiling": 2}
+  ]
