@@ -77,7 +77,7 @@ There's a lot to be said for making this a more interesting strategy by saying h
 
 ### Define Your Own
 
-There is a (buyers)[buyers] directory which includes a class for each strategy. I'm a Java programmer and threw this together in python and tied myself in knots trying to get the OO to work right here, so there just isn't OO and everything is based on duck-typing in the least safe possible way. Proceed with caution!
+There is a [buyers](buyers) directory which includes a class for each strategy. I'm a Java programmer and threw this together in python and tied myself in knots trying to get the OO to work right here, so there just isn't OO and everything is based on duck-typing in the least safe possible way. Proceed with caution!
 
 If you pick one of the existing strategies you can see they implement an ```act``` method, which receives the LBP object. They can use that to query the price and then decide whether to buy, and how much, according to their own logic. Should be pretty easy to add your own. Just remember to add it to the Factory class so the json config picks it up. If my serialization makes your eyes bleed then please submit a PR to fix it!
 
